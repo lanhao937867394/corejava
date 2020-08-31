@@ -11,7 +11,10 @@ public class CalendarTest
       LocalDate date = LocalDate.now();
       int month = date.getMonthValue();
       int today = date.getDayOfMonth();
-
+      
+      // today is the day in the month, from 1 to 31
+      // Subtract (that minus one day) will give you the date on the 
+      // first day of the month
       date = date.minusDays(today - 1); // set to start of month
       DayOfWeek weekday = date.getDayOfWeek();
       int value = weekday.getValue(); // 1 = Monday, . . . , 7 = Sunday
