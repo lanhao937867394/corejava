@@ -2,6 +2,8 @@ package abstractClasses;
 
 public abstract class Person
 {
+
+   // Declare abstract methods at the top
    public abstract String getDescription();
    private String name;
 

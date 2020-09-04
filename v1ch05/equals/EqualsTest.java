@@ -1,3 +1,6 @@
+// To run this file, you need to be at the base directory
+// and use javac equals/EqualsTest.java
+// followed by java equals.EqualsTest
 package equals;
 
 /**
@@ -29,6 +32,8 @@ public class EqualsTest
       boss.setBonus(5000);
       System.out.println("boss.toString(): " + boss);
       System.out.println("carl.equals(boss): " + carl.equals(boss));
+
+      // Equal objects must have the same hash code.
       System.out.println("alice1.hashCode(): " + alice1.hashCode());
       System.out.println("alice3.hashCode(): " + alice3.hashCode());
       System.out.println("bob.hashCode(): " + bob.hashCode());

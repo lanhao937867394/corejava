@@ -52,6 +52,10 @@ public class Employee
       var other = (Employee) otherObject;
 
       // test whether the fields have identical values
+
+      /*
+      Use == for primitive types and Objects.equals for reference type
+      */
       return Objects.equals(name, other.name) 
          && salary == other.salary && Objects.equals(hireDay, other.hireDay);
    }
