@@ -10,7 +10,8 @@ public class Main {
         Tutor t3 = new Tutor("Alan", 4);
 
         Person p = new Person("Bob");
-
+        
+        // Testing protected fields
         /*
         This is not allowed. Since "name" in the Person
         class is protected, can only be accessed by:
@@ -33,5 +34,12 @@ public class Main {
         p.accessChildrenName(s1);
         s1.printParentName();
         System.out.println(p.getClass() == s1.getClass());
+
+        // Testing protected methods
+        /*
+        Subclasses can access protected fields and methods of the parent class
+        and vice versa.
+        */
+        System.out.println(t2.getStaffIdPublic(t1));
     }
 }

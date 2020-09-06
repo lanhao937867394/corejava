@@ -34,4 +34,11 @@ public class Tutor extends Teacher{
         // from the same class
         System.out.printf("My collegue is in the %s\n", otherTutor.yearGroup);
     }
+
+    // Subclasses can access protected fields of superclass
+    public int getStaffIdPublic(Teacher t){
+        // return super.getStaffId();
+        // return super.staffId;
+        return t.staffId;
+    }
 }

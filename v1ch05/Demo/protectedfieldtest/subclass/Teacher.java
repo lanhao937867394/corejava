@@ -33,4 +33,8 @@ public class Teacher extends Person{
         // we can access staffId
         System.out.printf("This teacher, %s\n", t.staffId);
     }
+
+    protected int getStaffId(){
+        return this.staffId;
+    }
 }
