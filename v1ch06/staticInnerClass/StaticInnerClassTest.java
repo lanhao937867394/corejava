@@ -12,6 +12,8 @@ public class StaticInnerClassTest
       var values = new double[20];
       for (int i = 0; i < values.length; i++)
          values[i] = 100 * Math.random();
+      
+      // You can instantiate a static class
       ArrayAlg.Pair p = ArrayAlg.minmax(values);
       System.out.println("min = " + p.getFirst());
       System.out.println("max = " + p.getSecond());

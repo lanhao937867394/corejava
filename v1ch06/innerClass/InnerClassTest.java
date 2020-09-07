@@ -48,6 +48,9 @@ class TalkingClock
     */
    public void start()
    {
+
+      // Inner class objects need to be constructed, they are not
+      // associated automatically with the outer class objects.
       var listener = new TimePrinter();
       var timer = new Timer(interval, listener);
       timer.start();
